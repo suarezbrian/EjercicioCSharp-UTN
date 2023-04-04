@@ -6,11 +6,11 @@
         Console.ForegroundColor = ConsoleColor.Black;
         Console.Title = "Ejercicio_03";
 
-        Int32 numero = 0;
         Boolean esPrimo = false;
 
         Console.Write("ingrese un numero : ");
-        numero = Int32.Parse(Console.ReadLine());
+        bool success = int.TryParse(Console.ReadLine(), out Int32 numero);
+
 
         Console.WriteLine("Numeros primos: \n");
         for (Int32 i = 2; i < numero; i++)
