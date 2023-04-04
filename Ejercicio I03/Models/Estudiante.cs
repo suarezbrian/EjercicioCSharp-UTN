@@ -39,7 +39,7 @@ namespace Ejercicio_I03.Models
 
         private float CalcularPromedio()
         {
-            return (float)((this.notaPrimerParcial + this.notaSegundoParcial) / 2);
+            return ((this.notaPrimerParcial + (float)this.notaSegundoParcial) / 2);
         }
 
         private int NotaFinal()
