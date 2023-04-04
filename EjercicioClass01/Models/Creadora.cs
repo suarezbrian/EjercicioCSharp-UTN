@@ -31,8 +31,7 @@ namespace EjercicioClass01.Models
 
         public string ObtenerDiferencia()
         {
-            TimeSpan diferencia = this.fechaCreacion - Creadora.fechaCreacionPrimerObjeto;
-            return $"Diferencia es de : {diferencia}";
+            return $"Diferencia es de : {(TimeSpan)(this.fechaCreacion - Creadora.fechaCreacionPrimerObjeto)}";
         }
     }
 }

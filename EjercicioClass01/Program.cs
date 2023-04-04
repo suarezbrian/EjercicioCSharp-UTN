@@ -39,8 +39,11 @@ internal class Program
         Creadora obj4 = new Creadora(DateTime.Now);
 
 
-        Console.WriteLine($"Cantidad de instancias Creadas {obj4.ObtenerCantidadObjetosCreados()}");
-        Console.WriteLine(obj4.ObtenerDiferencia());
+        Console.WriteLine($"Cantidad de instancias Creadas {obj1.ObtenerCantidadObjetosCreados()}");
+        Console.WriteLine(obj1.ObtenerDiferencia() + " - primer objeto");
+        Console.WriteLine(obj2.ObtenerDiferencia() + " - segundo objeto");
+        Console.WriteLine(obj3.ObtenerDiferencia() + " - tercero objeto");
+        Console.WriteLine(obj4.ObtenerDiferencia() + " - cuarto objeto");
 
 
         Console.ReadKey();  
