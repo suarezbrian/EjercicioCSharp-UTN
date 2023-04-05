@@ -16,7 +16,7 @@ internal class Program
         Console.WriteLine();
         Console.ForegroundColor = ConsoleColor.Red;
         rojo.Pintar(50, out dibujo);
-        Console.WriteLine(dibujo);
+        Console.WriteLine(dibujo);        
 
         Console.ForegroundColor = ConsoleColor.Blue;
         azul.Pintar(10, out dibujo);
