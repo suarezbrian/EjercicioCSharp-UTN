@@ -12,11 +12,23 @@ namespace EjercicioSobreCarga.Models
         private string cadena;
         private DateTime fecha;
 
+        public Cosa(DateTime fecha, int entero, string cadena):this(entero, cadena)
+        {
+            this.fecha = fecha;
+        }
+        public Cosa(int entero, string cadena):this(cadena)
+        {
+            this.entero = entero;
+        }
+        public Cosa(string cadena)
+        {
+            this.cadena = cadena;
+        }
         public Cosa()
         {
-            this.entero = 0;
-            this.cadena = string.Empty;
-            this.fecha = DateTime.MinValue;
+            this.entero = 10;
+            this.cadena = "Sin valor";
+            this.fecha = DateTime.Now;
         }
         public void EstablecerValor(int entero)
         {

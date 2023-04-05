@@ -6,9 +6,9 @@ internal class Program
     {
         Cosa cosa = new Cosa();
 
-        cosa.EstablecerValor(10);
-        cosa.EstablecerValor("Texto");
-        cosa.EstablecerValor(DateTime.Now);
+        //cosa.EstablecerValor(10);
+        //cosa.EstablecerValor("Texto");
+        //cosa.EstablecerValor(DateTime.Now);
 
         Console.WriteLine(Cosa.Mostrar(cosa));
 
